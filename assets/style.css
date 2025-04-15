@@ -12,6 +12,14 @@
     height: 100%;
   }
 
+  body{
+    font-family: "Pangolin", cursive;
+  }
+
+  h1{
+    font-family: "Itim", cursive; 
+  }
+
 /* Create three equal columns that floats next to each other */
 .column {
     float: left;
