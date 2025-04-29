@@ -1,68 +1,160 @@
+:root{
+  --egg: #C7DCD0; /* dark outline */
+  --flour: #AB947A; /* light outline */ 
+  --tomato: #EA4F36; /* light outline */
+  --apple: #A2A947; /* dark outline */
+  --peach: #FCA790; /* dark outline */
+  --milk: #7F708A; /* light outline */
+  --bread: #E6904E; /* dark outline */
+  --shrimp: #F04F78; /* light outline */
+  --rice: #966C6C; /* light outline */
+  --meat: #AE2334; /* light outline*/
+  --darkOutline: #2E222F;
+  --lightOutline: #C7DCD0 ;    
+}
+* {
+  box-sizing: border-box;
+}
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @keyframes fadeOut {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+  0% {
+    opacity: 0;
   }
-  
-  html {
-    width: 100%;
-    height: 100%;
+  100% {
+    opacity: 1;
   }
+}
 
-  body{
-    font-family: "Pangolin", cursive;
-    background-color: white;
-  }
+a:link{
+  text-decoration: none;
+}
+a:visited{
+  text-decoration:none;
+}
+a:hover{
+  text-decoration: underline;
+}
+a:active {
+  text-decoration: underline;
+}
 
-  h1{
-    font-family: "Itim", cursive; 
-  }
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Pangolin", cursive;
+  background-color: white;
+}
+
+h1 {
+  font-family: "Itim", cursive;
+}
 
 /* Create three equal columns that floats next to each other */
 .column {
-    float: left;
-    width: 33.33%;
-    padding: 10px;
-    height: 300px;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-    }
-  }
-
-.game-container {
-            width: 60%;
-            margin: 15px auto;
-            background: #9BABB2;
-            padding: 20px;
-            border-radius: 5%;
-            box-shadow: 0px 0px 10px rgba(189, 29, 29, 0.2);
-            position: relative;
-            overflow: auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            /* Ensure the container does not exceed viewport height */
-             max-height: calc(100vh - 30px);
+  float: left;
+  width: 30.33%;
+  padding: 10px;
+  height: 300px;
 }
 
-.foodChoice01{
-    transform: translateY(70%);
-    display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 #2e222f;
+  padding: 16px;
+  text-align: center;
+  background-color: #323353;
+}
+
+.game-container {
+  width: 85%;
+  margin: 15px auto;
+  background: #9babb2;
+  padding: 20px;
+  border-radius: 1%;
+  box-shadow: 0px 0px 10px #2e222f;
+  position: relative;
+
+  align-items: center;
+  /* Ensure the container does not exceed viewport height */
+  max-height: calc(90vh - 1px);
+}
+
+.button{
+  align-self: center;
+  border: none;
+  color: #484A77; /* text color */
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.buttonContinue{
+  
+  background-color: #FDCBB0;
+  color: #484A77;
+  stroke-width: 1px;
+  stroke: #2E222F;
+  box-shadow: #2E222F;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  
+}
+
+.buttonContinue:hover{
+  background-color: #FFFFFF;
+}
+
+.ingredientButton{
+  background-color: #FDCBB0;
+  color: #484A77;
+  stroke-width: 4px;
+  text-shadow: #2E222F;
+  box-shadow: #2E222F;
+}
+
+.ingredientButton:hover{
+  background-color: #FFFFFF;
+}
+
+.foodChoice01 {
+  background-color: #FDCBB0;
+  transform: translateY(70%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  stroke-width: 1px;
+  box-shadow: #2E222F;
 }
