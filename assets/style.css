@@ -147,7 +147,8 @@ h1 {
   box-shadow: 0px 0px 10px #2e222f;
   position: relative;
   max-height: calc(90vh - 1px); /* Ensure the container does not exceed viewport height */
-
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
 
 .buttonContinue:hover{
