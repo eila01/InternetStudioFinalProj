@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Start-Game</title>
+    <title>omlete</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./assets/style.css" />
 
@@ -20,36 +20,44 @@
      -->
   </head>
   <body>
+    <div class="moving-background">
     <div class="game-container">
-      <div>You made an Omlete!</div>
       <div></div>
       <div></div>
       <div></div>
-      <div class="row">
-        <div class="column left">
-          
-        </div>
-
-        <div class="column middle">
-           <!-- <img src="" style= "width:200px; height:150px"> -->
-        </div>
-
-        <div class="column right">
-        </div>
-      </div>
-      
       <div class="row">
         <div class="column left"></div>
 
         <div class="column middle">
-            <div class="buttonContinue"><div><a href="startgame.html">Replay</a></div></div> 
-            <div class="buttonContinue"><div><a href="index.html">Return to Main Page</a></div></div>  
+          <h1>You made an Omlete!</h1>
+          <img
+            src="assets/img/omlete.png"
+            style="width: 200px; height: 150px"
+          />
         </div>
 
         <div class="column right"></div>
       </div>
-    </div>
+
+      <div class="row">
+        <div class="column left"></div>
+
+        <div class="column middle">
+          <div class="buttonContinue">
+            <div><a href="startgame.html">Replay</a></div>
+          </div>
+          <div class="buttonContinue">
+            <div><a href="index.html">Return to Main Page</a></div>
+          </div>
+        </div>
+
+        <div class="column right"></div>
+      </div>
+    </div></div>
     <div id="divID"></div>
-    <script type="text/javascript"></script>
+    <script type="text/javascript">
+      // Save the discovery of the omelet in localStorage
+      localStorage.setItem("discovered_omelet", "true");
+    </script>
   </body>
 </html>

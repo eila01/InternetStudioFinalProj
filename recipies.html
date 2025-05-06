@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Recipies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./assets/style.css" />
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&family=Pangolin&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Final Project:  -->
+    <!--Notes: 
+    
+         
+     -->
+  </head>
+  <body>
+    <div class="moving-background">
+    <div class="game-container">
+      <h1>Discovered Recipes</h1>
+
+      <div id="recipes-container"></div>
+
+      <div class="buttonContinue"><a href="index.html">Return</a></div>
+      <div class = "buttonContinue"><div onclick="localStorage.clear(); location.reload();">Reset Progress</div></div>
+    </div></div>
+    <div id="divID"></div>
+    <script type="text/javascript">
+      // Check for discovered dishes in localStorage
+      const recipesContainer = document.getElementById("recipes-container");
+
+      if (localStorage.getItem("discovered_omelet") === "true") {
+        // Add the omelet image if discovered
+        const omeletImage = document.createElement("img");
+        omeletImage.src = "assets/img/omlete.png"; // Path to the omelet image
+        omeletImage.alt = "Omelet";
+        omeletImage.style.width = "80px";
+        omeletImage.style.height = "80px";
+        recipesContainer.appendChild(omeletImage);
+      }
+
+      if (localStorage.getItem("discovered_applepie") === "true") {
+        // Add the omelet image if discovered
+        const applePieImage = document.createElement("img");
+        applePieImage.src = "assets/img/applepie.png"; // Path to the omelet image
+        applePieImage.alt = "Apple Pie";
+        applePieImage.style.width = "80px";
+        applePieImage.style.height = "80px";
+        recipesContainer.appendChild(applePieImage);
+      }
+
+      if (localStorage.getItem("discovered_blt") === "true") {
+        // Add the omelet image if discovered
+        const bltImage = document.createElement("img");
+        bltImage.src = "assets/img/blt.png"; // Path to the omelet image
+        bltImage.alt = "BLT";
+        bltImage.style.width = "80px";
+        bltImage.style.height = "80px";
+        recipesContainer.appendChild(bltImage);
+      }
+
+      if (localStorage.getItem("discovered_bruschetta") === "true") {
+        // Add the omelet image if discovered
+        const bruschettaImage = document.createElement("img");
+        bruschettaImage.src = "assets/img/bruschetta.png"; // Path to the omelet image
+        bruschettaImage.alt = "Bruschetta";
+        bruschettaImage.style.width = "80px";
+        bruschettaImage.style.height = "80px";
+        recipesContainer.appendChild(bruschettaImage);
+      }
+
+      if (localStorage.getItem("discovered_grilledcheese") === "true") {
+        // Add the omelet image if discovered
+        const grilledCheeseImage = document.createElement("img");
+        grilledCheeseImage.src = "assets/img/grilledcheese.png"; // Path to the omelet image
+        grilledCheeseImage.alt = "Grilled Cheese";
+        grilledCheeseImage.style.width = "80px";
+        grilledCheeseImage.style.height = "80px";
+        recipesContainer.appendChild(grilledCheeseImage);
+      }
+
+      if (localStorage.getItem("discovered_pancakes") === "true") {
+        // Add the omelet image if discovered
+        const pancakeImage = document.createElement("img");
+        pancakeImage.src = "assets/img/pancake.png"; // Path to the omelet image
+        pancakeImage.alt = "Pancakes";
+        pancakeImage.style.width = "80px";
+        pancakeImage.style.height = "80px";
+        recipesContainer.appendChild(pancakeImage);
+      }
+
+      if (localStorage.getItem("discovered_peachcobbler") === "true") {
+        // Add the omelet image if discovered
+        const peachCobblerImage = document.createElement("img");
+        peachCobblerImage.src = "assets/img/peachcobbler.png"; // Path to the omelet image
+        peachCobblerImage.alt = "Peach Cobbler";
+        peachCobblerImage.style.width = "80px";
+        peachCobblerImage.style.height = "80px";
+        recipesContainer.appendChild(peachCobblerImage);
+      }
+
+      if (localStorage.getItem("discovered_sandwhich") === "true") {
+        // Add the omelet image if discovered
+        const sandwhichImage = document.createElement("img");
+        sandwhichImage.src = "assets/img/sandwhich.png"; // Path to the omelet image
+        sandwhichImage.alt = "sandwhich";
+        sandwhichImage.style.width = "80px";
+        sandwhichImage.style.height = "80px";
+        recipesContainer.appendChild(sandwhichImage);
+      }
+
+      if (localStorage.getItem("discovered_scramble") === "true") {
+        // Add the omelet image if discovered
+        const scrambleImage = document.createElement("img");
+        scrambleImage.src = "assets/img/scramble.png"; // Path to the omelet image
+        scrambleImage.alt = "scramble eggs";
+        scrambleImage.style.width = "80px";
+        scrambleImage.style.height = "80px";
+        recipesContainer.appendChild(scrambleImage);
+      }
+
+      if (localStorage.getItem("discovered_fruitsalad") === "true") {
+        // Add the omelet image if discovered
+        const fruitsalad = document.createElement("img");
+        fruitsaladImage.src = "assets/img/fruitsalad.png"; // Path to the omelet image
+        fruitsaladImage.alt = "Fruit Salad";
+        fruitsaladImage.style.width = "80px";
+        fruitsaladImage.style.height = "80px";
+        recipesContainer.appendChild(fruitsaladImage);
+      }
+
+      if (localStorage.getItem("discovered_sunnysideup") === "true") {
+        // Add the omelet image if discovered
+        const sunnysideupImage = document.createElement("img");
+        sunnysideupImage.src = "assets/img/sunnysideup.png"; // Path to the omelet image
+        sunnysideupImage.alt = "Sunny Side Up";
+        sunnysideupImage.style.width = "80px";
+        sunnysideupImage.style.height = "80px";
+        
+        recipesContainer.appendChild(sunnysideupImage);
+      }
+
+    </script>
+  </body>
+</html>

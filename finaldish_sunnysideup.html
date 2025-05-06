@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Start-Game</title>
+    <title>sunnysideup</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./assets/style.css" />
 
@@ -21,7 +21,7 @@
   </head>
   <body>
     <div class="game-container">
-      <div>You made a Sunny Side Up Egg!</div>
+      
       <div></div>
       <div></div>
       <div></div>
@@ -31,7 +31,8 @@
         </div>
 
         <div class="column middle">
-           <!-- <img src="" style= "width:200px; height:150px"> -->
+          <h1>You made a Sunny Side Up Egg!</h1>
+            <img src="assets/img/sunnysideup.png" style= "width:200px; height:150px"> 
         </div>
 
         <div class="column right">
@@ -50,6 +51,9 @@
       </div>
     </div>
     <div id="divID"></div>
-    <script type="text/javascript"></script>
+    <script type="text/javascript">
+      // Save the discovery of the sunnysideup in localStorage
+      localStorage.setItem("discovered_sunnysideup", "true");
+    </script>
   </body>
 </html>
